@@ -41,7 +41,7 @@ class SEOTools implements SEOContract
     public function setTitle($title)
     {
         $this->metatags()->setTitle($title);
-        $this->opengraph()->setTitle($title);
+        $this->opengraph()->setTitle($this->metatags()->getTitle());
         $this->twitter()->setTitle($title);
 
         return $this;
