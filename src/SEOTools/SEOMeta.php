@@ -480,7 +480,7 @@ class SEOMeta implements MetaTagsContract
     {
         $canonical_config = $this->config->get('defaults.canonical', false);
 
-        if ($thig->canonical === false) {
+        if ($this->canonical === false) {
             return false;
         }
 
